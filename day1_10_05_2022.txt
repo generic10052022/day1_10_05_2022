@@ -1,0 +1,135 @@
+
+class Hello{
+   public static void main(String[] args){
+     System.out.println("Hello World");
+   }
+ }
+
+
+
+STEP1:- Writing a java code.
+        * We save the file with .java extension.
+STEP2:- Compiling the java code. 
+        *we compile the code from the command prompt where we have saved our file.
+        * javac <filename>
+          javac Hello.java
+              |
+              |
+         Hello.class (containing bytecode) 
+STEP3:- Executing the code. For that we invoke java interpreter.
+        * java <classname>
+          java Hello
+---------------------------------------------------------------------------------------------------------------------------------
+In Java, the program (source code) written by the programmer gets compiled and converted into byte code (compiled code) by the Java compiler.
+
+All the byte codes required for the program are then given to the interpreter. The interpreter reads the byte code line by line, converts it to binary form, also called as machine language or binary language, and then executes it.
+--------------------------------------------------------------------------------------------------------------------------------
+Q How to know whether java is installed in my system?
+A java -version
+---------------------------------------------------------------------------------------------------------------------------------
+Q How to start using javac(java compiler) and java(java interpreter). 
+A Just check by writing
+  javac ( if it shows undefined command that means path is not set).
+------------------------------------------------------------------------------------------------------------------------------\\
+Q How to set the path?
+A a)Right click on My Computer or This PC.
+  b) properties
+  c) Advanced System settings
+  d) Within the system properties dialog box, select for Environment variables
+  e) Select path from system variables
+  f) Add a new variable.
+  g) copy the path C:\Program Files\Java\jdk-17.0.2\bin and close the dialog boxes.
+  h) Then open the command prompt by moving into that folder which is having the java code.( for that type cmd in the
+    address bar).
+  i) Now again we can check by writing only javac , if is not showing undefined , that means the path is set
+    correctly.
+---------------------------------------------------------------------------------------------------------------------------------
+  
+Q Where to get the eclipse IDE?
+A. https://www.eclipse.org/downloads/
+
+-----------------------------------------------------------------------------------------------------------------
+
+Q How to create a project in eclipse IDE?
+A a) First we open the workspace ( workspace further contains projects).
+  b) File ----> New -------> Java Project
+  c) Assign the project name and click on Finish button.
+
+Q How we create a java file?
+A a)Goto package explorer.
+  b) Right click on the project.
+  c) Select New ----> class.It shows the Java class dialog box.
+  d) In the dialog box. Delete/remove the package name.( By default the package name is same as that of the project name).
+  e) Mention the class name within the class name textbox.
+  f) check the checkbox for the main method.
+  g) Complete the code. 
+  h) Execute the code by right click on the editor. Select run as ----> Java application.
+---------------------------------------------------------------------------------------------------------------------------------
+Till now we learnt 
+*how to install java ( we installed version 17).
+* We learnt how to check whether java is installed in our system.
+  java -version
+* We should check whether path is being set or not
+  javac
+* We have understood:-
+  ** How to write a code in simple editor.
+  ** How to save the file after writing it in the editor.
+  ** How to compile the code after saving the file.
+     javac <filename>
+     javac Demo.java
+ ** How to execute the java code..
+     java classname
+     java Demo
+---------------------------------------------------------------------------------------------------------------------------------
+class Welcome {
+	public static void main(String[] args) {
+		System.out.println("Hello World! Welcome to Java Programming!");
+	}
+}
+
+
+* println()-----> It is a method to display the content which is within ().
+                  "Hello World! Welcome to Java Programming!" anything within quotes means 
+                   it is a string. String is a group of characters.
+  System.out.println();
+----------------------------------------------------------------------------------------------------------------------------------
+public static void main(String[] args){
+
+}
+
+The above is the main method. In java within a program or code we should have atleast
+one main method. If we dont have main method , we wont be able to execute our code.
+main method is having the return type as void. void means the method is not returning any 
+value. 
+public is an access specifier/modifier which decides whether the main method is accessible outside
+the class or not and we have to write it with the main method.
+We have other access specifiers like private,default and protected apart from
+public. 
+static is a modifier which we have to write with the main method.
+String[] args===> args is an array of type String. [] signifies that it is an array.
+
+----------------------------------------------------------------------------------------------------------------------
+class Welcome {}
+
+Welcome is a user defined class. A class which is defined or planned by the coder.
+In java main method needs to be within a class. class is just like a container for 
+methods and variables.
+
+--------------------------------------------------------------------------------------------------------------------------
+Here in the above code:-
+Welcome,System,String are classes. Welcome is a user defined class whereas System
+and String are predefined classes which are part of java library 
+(java API ( Application Programming Interface)).
+The class name starts with uppercase.
+---------------------------------------------------------------------------------------------------------------------------
+class,public,static,void are keywords. keywords we write in smallcase.
+---------------------------------------------------------------------------------------------------------
+main,println are methods. methods we write in smallcase if it is single word.
+If method name consists of multiple words, first word is written entirely in
+smallcase and the second word onwards first character in uppercase.
+example displayDetails() , getData(), parseInt() 
+---------------------------------------------------------------------------------------------------------------
+Every statement ends up with semi-colon (;)
+
+
+
