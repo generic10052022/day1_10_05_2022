@@ -131,5 +131,37 @@ example displayDetails() , getData(), parseInt()
 ---------------------------------------------------------------------------------------------------------------
 Every statement ends up with semi-colon (;)
 
-
-
+-------------------------------------------------------------------------------------
+Display roll number and name of a student
+In the below code we have declared an int variable to store the roll number and
+String to store a name.
+While declaring the variable(roll)/reference variable(name) we initialised 
+with some initial value like 1 and Rajesh and latter after the display
+we changed the value as 2 and Akash. As they can store different values during
+the execution of the code, they are known as variables.
+    class Student {
+         public static void main(String[] args){
+             int roll=1;
+             String name="Rajesh";
+             System.out.println("The roll number is "+roll);
+             System.out.println("The name is "+name);
+             roll=2;
+             name="Akash";
+             System.out.println(roll);
+             System.out.println(name);
+            }
+      }
+            
+--------------------------------------------------------------------------------------------------------------                
+   class Student1 {
+         public static void main(String[] args){
+             int roll;
+             String name;
+             System.out.println("The roll number is "+roll);
+             System.out.println("The name is "+name);
+   
+            }
+      }
+The local variables ( The variables declared within a block ( method/for loop/if) needs to initialised before they are accessed.
+[ The above code will show compilation error:
+The local variable roll may not have been initialized]
